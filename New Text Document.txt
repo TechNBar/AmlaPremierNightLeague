@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amla Premier League Night Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cricket_logo.svg/512px-Cricket_logo.svg.png" alt="Cricket Logo" class="logo">
+        <h1>Amla Premier League Night Tournament</h1>
+        <form action="server.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="city">City/Village:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="skill">Cricket Skill:</label>
+            <select id="skill" name="skill" required>
+                <option value="Batting">Batting</option>
+                <option value="Bowling">Bowling</option>
+                <option value="Batting-Allrounder">Batting-Allrounder</option>
+                <option value="Bowling-Allrounder">Bowling-Allrounder</option>
+            </select>
+
+            <label for="photo">Photograph:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="payment">Payment Screenshot:</label>
+            <input type="file" id="payment" name="payment" accept="image/*" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
